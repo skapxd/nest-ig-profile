@@ -9,6 +9,6 @@ services:
       - "3002:3000"
     volumes:
       - .:/app
-    command: npm run start:dev
+    command: node dist/main.js
     environment:
       NODE_ENV: development
