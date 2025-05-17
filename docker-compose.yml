@@ -7,8 +7,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3002:3000"
-    volumes:
-      - .:/app
-    command: node dist/main.js
+
+    command: node ./dist/main.js
     environment:
       NODE_ENV: development
